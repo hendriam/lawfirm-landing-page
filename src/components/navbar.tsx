@@ -1,0 +1,22 @@
+import logo from "../assets/logo.png";
+import { menus } from "../data.ts";
+
+export default function Navbar() {
+    return (
+        <nav className="container flex justify-between items-center mx-0 lg:mx-auto px-5 xl:px-0 lg:w-full max-w-6xl">
+            <a href="/">
+                <img src={logo} width={150} />
+            </a>
+            <ul className="hidden md:flex items-center space-x-6 text-white font-normal text-[16px]">
+                {menus.map((menu) => (
+                    <li className="hover:underline" key={menu.id}>
+                        <a href={menu.link}>{menu.name}</a>
+                    </li>
+                ))}
+            </ul>
+            <button className="hidden md:flex bg-[#FCA311] hover:opacity-80 py-2 px-3.5 text-center font-bold text-[16px] hover:cursor-pointer ">
+                Contact
+            </button>
+        </nav>
+    );
+}
