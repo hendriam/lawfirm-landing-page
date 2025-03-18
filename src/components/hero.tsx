@@ -3,10 +3,10 @@ import vector1 from "../assets/vector-1.svg";
 
 export default function Hero() {
     return (
-        <div className="container flex justify-between items-center space-x-5 mt-12 mb-12 mx-0 lg:mx-auto px-5 xl:px-0 lg:w-full max-w-6xl">
+        <div className="container flex justify-center items-center pt-5 pb-20 space-x-5 mx-0 lg:mx-auto px-5 xl:px-0 lg:w-full max-w-6xl">
             <div className="flex flex-col items-start lg:space-y-11 space-y-5">
-                <h1 className="text-white lg:text-7xl md:text-6xl sm:text-5xl text-4xl lg:leading-24 md:leading-15 sm:leading-12">
-                    Your Partner on the <br className="transition-all duration-200 " />{" "}
+                <h1 className="text-white lg:text-7xl md:text-6xl sm:text-5xl text-3xl lg:leading-20 md:leading-20 sm:leading-15">
+                    Your Partner on the{" "}
                     <span>
                         Path to Justice.{" "}
                         <img
@@ -23,7 +23,7 @@ export default function Hero() {
                     <br className="hidden lg:flex transition-all duration-200" />
                     ensure justice is served
                 </p>
-                <button className="bg-[#FCA311] hover:opacity-80 hover:cursor-pointer md:py-3 py-2 md:px-5 px-3.5 xl:text-3xl md:text-2xl text-xl text-center font-bold">
+                <button className="bg-[#FCA311] hover:opacity-80 hover:cursor-pointer md:py-3 py-2 md:px-5 px-3.5 xl:text-2xl md:text-xl text-lg text-center font-bold">
                     Schedule a Consultation
                 </button>
             </div>

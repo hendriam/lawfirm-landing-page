@@ -3,7 +3,7 @@ import { menus } from "../data.ts";
 
 export default function Navbar() {
     return (
-        <nav className="container flex justify-between items-center mx-0 lg:mx-auto px-5 xl:px-0 lg:w-full max-w-6xl">
+        <nav className="container flex justify-between items-center py-8 mx-0 lg:mx-auto px-5 xl:px-0 lg:w-full max-w-6xl">
             <a href="/">
                 <img src={logo} width={150} />
             </a>

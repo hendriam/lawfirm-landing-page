@@ -5,7 +5,7 @@ function App() {
     return (
         <>
             <Header />
-            <main className="container flex justify-between items-center mx-0 lg:mx-auto px-5 xl:px-0 lg:w-full max-w-6xl">
+            <main className="container mx-0 lg:mx-auto px-5 xl:px-0 lg:w-full max-w-6xl">
                 <Offer />
             </main>
         </>
