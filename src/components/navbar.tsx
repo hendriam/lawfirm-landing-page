@@ -7,14 +7,14 @@ export default function Navbar() {
             <a href="/">
                 <img src={logo} width={150} />
             </a>
-            <ul className="hidden md:flex items-center space-x-6 text-white font-normal text-[16px]">
+            <ul className="hidden md:flex items-center space-x-6 text-white font-normal text-[17px]">
                 {menus.map((menu) => (
                     <li className="hover:underline" key={menu.id}>
                         <a href={menu.link}>{menu.name}</a>
                     </li>
                 ))}
             </ul>
-            <button className="hidden md:flex bg-[#FCA311] hover:opacity-80 py-2 px-3.5 text-center font-bold text-[16px] hover:cursor-pointer ">
+            <button className="hidden md:flex bg-[#FCA311] hover:opacity-80 py-1.5 px-3 text-center font-bold text-[17px] hover:cursor-pointer ">
                 Contact
             </button>
         </nav>

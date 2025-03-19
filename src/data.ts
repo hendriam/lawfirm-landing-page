@@ -22,6 +22,13 @@ export type OfferType = {
     }[];
 }[];
 
+export type LawyerType = {
+    id: number;
+    name: string;
+    title: string;
+    image: string;
+}[];
+
 export const menus: MenuTyps = [
     { id: 1, name: "Home", link: "/home" },
     { id: 2, name: "Services", link: "/services" },
@@ -181,5 +188,27 @@ export const offers: OfferType = [
                 name: "Tax planning for individuals and businesses.",
             },
         ],
+    },
+];
+
+export const lawyers: LawyerType = [
+    { id: 1, name: "Austin Distel", title: "Family Lawyer", image: "./assets/lawyer-1.jpg" },
+    {
+        id: 2,
+        name: "Christina Wocin",
+        title: "Intellectual Property Law",
+        image: "./assets/lawyer-2.jpg",
+    },
+    {
+        id: 3,
+        name: "Joachim Thiele",
+        title: "Human Rights and Advocacy",
+        image: "./assets/lawyer-3.jpg",
+    },
+    {
+        id: 4,
+        name: "Victor Quiroga",
+        title: "Real Estate and Property Law",
+        image: "./assets/lawyer-4.jpg",
     },
 ];

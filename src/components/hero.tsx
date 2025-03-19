@@ -5,18 +5,18 @@ export default function Hero() {
     return (
         <div className="container flex justify-center items-center pt-5 pb-20 space-x-5 mx-0 lg:mx-auto px-5 xl:px-0 lg:w-full max-w-6xl">
             <div className="flex flex-col items-start lg:space-y-11 space-y-5">
-                <h1 className="text-white lg:text-7xl md:text-6xl sm:text-5xl text-3xl lg:leading-20 md:leading-20 sm:leading-15">
+                <h1 className="text-white lg:text-7xl md:text-6xl sm:text-5xl text-5xl lg:leading-23 md:leading-20 sm:leading-17 leading-16">
                     Your Partner on the{" "}
                     <span>
                         Path to Justice.{" "}
                         <img
                             src={vector1}
                             alt="vector1"
-                            className="lg:w-md w-3xs transition-all duration-200"
+                            className="lg:w-lg w-3xs transition-all duration-200"
                         />
                     </span>
                 </h1>
-                <p className="text-white font-thin md:text-lg text-base md:leading-8 leading-6 transition-all duration-200">
+                <p className="text-white  font-thin md:text-lg text-base md:leading-8 leading-6 transition-all duration-200">
                     We stand by your side, providing expert legal guidance{" "}
                     <br className="hidden lg:flex transition-all duration-200" /> and unwavering
                     support to protect your rights and{" "}

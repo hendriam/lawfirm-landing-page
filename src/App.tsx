@@ -1,5 +1,6 @@
 import Header from "./components/header";
 import Offer from "./components/offer";
+import OurLawyers from "./components/our-layers";
 
 function App() {
     return (
@@ -7,6 +8,7 @@ function App() {
             <Header />
             <main className="container mx-0 lg:mx-auto px-5 xl:px-0 lg:w-full max-w-6xl">
                 <Offer />
+                <OurLawyers />
             </main>
         </>
     );
