@@ -1,5 +1,12 @@
 import { lawyers } from "../data.ts";
-import { FacebookIcon, InstagramIcon, LinkedInIcon, TwitterIcon } from "./icons-social.tsx";
+import {
+    ArrowLeft,
+    ArrowRight,
+    FacebookIcon,
+    InstagramIcon,
+    LinkedInIcon,
+    TwitterIcon,
+} from "./icons-social.tsx";
 
 export default function OurLawyers() {
     return (
@@ -13,13 +20,13 @@ export default function OurLawyers() {
                 {lawyers.map((lawyer) => (
                     <figure
                         key={lawyer.id}
-                        className={`bg-[url(${lawyer.image})] bg-cover bg-center bg-no-repeat w-auto lg:h-96 md:h-72 h-96 flex items-end justify-center shadow-[inset_0px_-10px_70px_0px_#1a202c] hover:shadow-[inset_0px_-10px_90px_10px_#1a202c] transition-all duration-200 group`}
+                        className={`bg-[url(${lawyer.image})] bg-cover relative bg-center bg-no-repeat w-auto lg:h-96 md:h-72 h-96 flex items-end justify-center shadow-[inset_0px_-40px_60px_0px_#1a202c] hover:shadow-[inset_0px_-60px_90px_0px_#1a202c] transition-all delay-100 duration-300 ease-in-out group`}
                     >
-                        <figcaption className="mb-4 ">
+                        <figcaption className="mb-4 absolute">
                             <h5 className="text-center text-xl text-white">{lawyer.name}</h5>
                             <p className="text-center text-sm text-[#FCA311]">{lawyer.title}</p>
 
-                            <div className="bg-[#FCA311] px-5 group-hover:flex mt-2 hidden justify-center space-x-2 py-2 transition-all duration-200">
+                            <div className="bg-[#FCA311] px-5 group-hover:flex delay-100 duration-300 ease-in-out mt-2 hidden justify-center space-x-2 py-2">
                                 <InstagramIcon />
                                 <LinkedInIcon />
                                 <TwitterIcon />
@@ -27,31 +34,17 @@ export default function OurLawyers() {
                             </div>
                         </figcaption>
                     </figure>
-
-                    // <div className="w-full relative flex items-center justify-center h-[500px]">
-                    //     <div
-                    //         className="group bg-white shadow-lg shadow-gray-200 rounded-xl relative transition-all duration-500 w-2/3 h-96 flex items-center justify-center hover:shadow-gray-300"
-                    //         style="background-image: url(https://pagedone.io/asset/uploads/1688029384.png);"
-                    //     >
-                    //         <div className="flex flex-col items-center justify-between w-full h-full py-6 gap-4 text-center relative z-10">
-                    //             <h4 className="font-manrope font-bold text-3xl text-white text-center leading-snug">
-                    //                 How We Made <br />
-                    //                 Best Sport Shoes{" "}
-                    //             </h4>
-                    //             <div className="flex items-center justify-center w-full gap-4">
-                    //                 <img
-                    //                     className="w-10 h-10 rounded-full"
-                    //                     src="https://pagedone.io/asset/uploads/1704275541.png"
-                    //                     alt="Rounded Avatar"
-                    //                 />
-                    //                 <h6 className="text-xl font-medium text-white ">
-                    //                     Antonio Roberto
-                    //                 </h6>
-                    //             </div>
-                    //         </div>
-                    //     </div>
-                    // </div>
                 ))}
+            </div>
+
+            <div className="mt-5 w-fit flex space-x-2 mx-auto">
+                <button className="bg-[#FCA311] rounded-full p-2 hover:cursor-pointer hover:opacity-80">
+                    <ArrowLeft />
+                </button>
+
+                <button className="bg-[#FCA311] rounded-full p-2 hover:cursor-pointer hover:opacity-80">
+                    <ArrowRight />
+                </button>
             </div>
         </section>
     );

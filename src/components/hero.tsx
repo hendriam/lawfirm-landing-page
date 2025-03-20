@@ -30,7 +30,7 @@ export default function Hero() {
             <img
                 src={imgHero}
                 alt="img-hero"
-                className="hidden md:flex lg:w-[400px] md:w-[300px] w-[250px] transition-all duration-200"
+                className="hidden md:flex lg:w-[400px] md:w-[300px] w-[250px] transition-all delay-75 duration-300 ease-in-out rotate-0 hover:rotate-3"
             />
         </div>
     );
