@@ -5,6 +5,12 @@ import fa_people from "./assets/fa_people.svg";
 import fa_home from "./assets/fa_home.svg";
 import fa_villa from "./assets/fa_villa.svg";
 import mdi_legal from "./assets/mdi_legal.svg";
+import blog1 from "./assets/blog1.jpg";
+import blog2 from "./assets/blog2.jpg";
+import blog3 from "./assets/blog3.jpg";
+import blog4 from "./assets/blog4.jpg";
+import blog5 from "./assets/blog5.jpg";
+import blog6 from "./assets/blog6.jpg";
 
 export type MenuTyps = {
     id: number;
@@ -26,6 +32,15 @@ export type LawyerType = {
     id: number;
     name: string;
     title: string;
+    image: string;
+}[];
+
+export type BlogType = {
+    id: number;
+    title: string;
+    description: string;
+    date: string;
+    category: string;
     image: string;
 }[];
 
@@ -210,5 +225,62 @@ export const lawyers: LawyerType = [
         name: "Victor Quiroga",
         title: "Real Estate and Property Law",
         image: "./assets/lawyer-4.jpg",
+    },
+];
+
+export const blogs: BlogType = [
+    {
+        id: 1,
+        title: "The Legal Implications of Remote Work",
+        description:
+            "As remote work becomes more common, it's important to understand the legal implications for both employers and employees.",
+        date: "June 15, 2021",
+        category: "Employment Law",
+        image: blog1,
+    },
+    {
+        id: 2,
+        title: "How to Protect Your Intellectual Property",
+        description:
+            "Intellectual property is a valuable asset for businesses. Learn how to protect your IP rights and avoid infringement.",
+        date: "June 10, 2021",
+        category: "Intellectual Property Law",
+        image: blog2,
+    },
+    {
+        id: 3,
+        title: "Navigating Child Custody Disputes",
+        description:
+            "Child custody disputes can be emotionally challenging. Learn about the legal process and how to protect your child's best interests.",
+        date: "June 5, 2021",
+        category: "Family Law",
+        image: blog3,
+    },
+    {
+        id: 4,
+        title: "The Role of Lawyers in Human Rights Advocacy",
+        description:
+            "Lawyers play a crucial role in advocating for human rights and social justice. Learn how legal professionals can make a difference.",
+        date: "June 1, 2021",
+        category: "Human Rights",
+        image: blog4,
+    },
+    {
+        id: 5,
+        title: "Understanding the Basics of Tax Law",
+        description:
+            "Tax law can be complex, but understanding the basics is essential for individuals and businesses. Learn about tax compliance, deductions, and more.",
+        date: "May 25, 2021",
+        category: "Tax Law",
+        image: blog5,
+    },
+    {
+        id: 6,
+        title: "Legal Considerations for Starting a Business",
+        description:
+            "Starting a business involves various legal considerations, from choosing the right business structure to protecting your intellectual property. Learn more.",
+        date: "May 20, 2021",
+        category: "Business Law",
+        image: blog6,
     },
 ];

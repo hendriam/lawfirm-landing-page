@@ -12,7 +12,7 @@ export default function OurLawyers() {
     return (
         <section className="w-full my-20">
             <h3 className="text-[40px] text-center text-[#FCA311]">Our Lawyers</h3>
-            <p className="mt-5 text-center">
+            <p className="mt-3 text-center">
                 Meet our team of dedicated legal professionals, committed to{" "}
                 <br className="hidden md:block" /> providing expert advice and tailored solutions to
                 meet your legal <br className="hidden md:block" /> needs.

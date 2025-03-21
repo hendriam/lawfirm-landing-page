@@ -7,7 +7,7 @@ export default function Testimonials() {
             <div className="grid grid-rows-1 lg:grid-cols-3 gap-5 lg:gap-18 transition-all duration-200 ">
                 <div className="text-center lg:text-start ">
                     <h3 className="text-2xl text-[#FCA311]">Client Testimonials</h3>
-                    <p className="md:text-xl lg:text-[40px] text-[20px] lg:leading-12 leading-normal mt-5 lg:text-start text-center">
+                    <p className="md:text-xl lg:text-[40px] text-[20px] lg:leading-12 leading-normal mt-3 lg:text-start text-center">
                         Hear from our clients about their <br className="block lg:hidden" />{" "}
                         experiences.
                     </p>

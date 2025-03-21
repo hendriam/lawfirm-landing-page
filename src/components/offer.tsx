@@ -12,7 +12,7 @@ export default function Offer() {
                 />
                 <div className="order-1 md:order-2 text-center md:text-start">
                     <h3 className="text-2xl text-[#FCA311]">What We Offer</h3>
-                    <p className="md:text-2xl lg:text-[40px] text-[20px] lg:leading-12 leading-normal mt-5 md:text-justify text-center">
+                    <p className="md:text-2xl lg:text-[40px] text-[20px] lg:leading-12 leading-normal mt-3 md:text-justify text-center">
                         We provide tailored legal solutions to meet your unique needs, ensuring your
                         rights are protected and justice is served.
                     </p>

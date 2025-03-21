@@ -1,3 +1,4 @@
+import Blogs from "./components/blogs";
 import Header from "./components/header";
 import Offer from "./components/offer";
 import OurLawyers from "./components/our-layers";
@@ -11,6 +12,7 @@ function App() {
                 <Offer />
                 <OurLawyers />
                 <Testimonials />
+                <Blogs />
             </main>
         </>
     );
