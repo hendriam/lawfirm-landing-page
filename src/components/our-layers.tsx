@@ -10,11 +10,12 @@ import {
 
 export default function OurLawyers() {
     return (
-        <section className="w-full my-12">
+        <section className="w-full my-20">
             <h3 className="text-[40px] text-center text-[#FCA311]">Our Lawyers</h3>
             <p className="mt-5 text-center">
-                Meet our team of dedicated legal professionals, committed to <br /> providing expert
-                advice and tailored solutions to meet your legal <br /> needs.
+                Meet our team of dedicated legal professionals, committed to{" "}
+                <br className="hidden md:block" /> providing expert advice and tailored solutions to
+                meet your legal <br className="hidden md:block" /> needs.
             </p>
             <div className="mt-10 grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5">
                 {lawyers.map((lawyer) => (

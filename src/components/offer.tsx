@@ -3,7 +3,7 @@ import Services from "./services";
 
 export default function Offer() {
     return (
-        <section className="my-12">
+        <section className="my-20">
             <div className="flex flex-col md:flex-row gap-6 transition-all duration-200">
                 <img
                     src={teamwork}
