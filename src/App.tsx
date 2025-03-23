@@ -1,4 +1,5 @@
 import Blogs from "./components/blogs";
+import Faqs from "./components/faqs";
 import Header from "./components/header";
 import Offer from "./components/offer";
 import OurLawyers from "./components/our-layers";
@@ -13,6 +14,7 @@ function App() {
                 <OurLawyers />
                 <Testimonials />
                 <Blogs />
+                <Faqs />
             </main>
         </>
     );

@@ -44,6 +44,12 @@ export type BlogType = {
     image: string;
 }[];
 
+export type FaqType = {
+    id: number;
+    question: string;
+    answer: string;
+}[];
+
 export const menus: MenuTyps = [
     { id: 1, name: "Home", link: "/home" },
     { id: 2, name: "Services", link: "/services" },
@@ -282,5 +288,33 @@ export const blogs: BlogType = [
         date: "May 20, 2021",
         category: "Business Law",
         image: blog6,
+    },
+];
+
+export const faqs: FaqType = [
+    {
+        id: 1,
+        question: "What types of legal services do you provide?",
+        answer: "We offer services in various legal areas, including family law, business law, property law, intellectual property, and litigation.",
+    },
+    {
+        id: 2,
+        question: "How can I find the right lawyer for my case?",
+        answer: "You can find the right lawyer by researching their experience, expertise, and reputation in the legal community.",
+    },
+    {
+        id: 3,
+        question: "What should I expect during a legal consultation?",
+        answer: "During a legal consultation, you can expect to discuss your case with the lawyer, ask questions, and receive legal advice.",
+    },
+    {
+        id: 4,
+        question: "How much does it cost to hire a lawyer?",
+        answer: "The cost of hiring a lawyer varies depending on the complexity of the case, the lawyer's experience, and other factors.",
+    },
+    {
+        id: 5,
+        question: "What is the difference between litigation and mediation?",
+        answer: "Litigation involves resolving legal disputes in court, while mediation is a form of alternative dispute resolution that involves a neutral third party helping the parties reach a settlement.",
     },
 ];
