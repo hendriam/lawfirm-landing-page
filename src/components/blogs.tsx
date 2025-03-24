@@ -11,11 +11,11 @@ export default function Blogs() {
             </p>
             <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 mt-10">
                 {blogs.map((blog) => (
-                    <figure className="shadow-lg hover:shadow-[0_15px_15px_rgba(0.25,0.25,0.25,0.25)] transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-3d border-[#FCA311] border-b-4 hover:cursor-pointer">
-                        {/* <div className="w-sm"> */}
+                    <figure
+                        key={blog.id}
+                        className="shadow-lg hover:shadow-[0_15px_15px_rgba(0.25,0.25,0.25,0.25)] transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-3d border-[#FCA311] border-b-4 hover:cursor-pointer"
+                    >
                         <img src={blog.image} alt="blog1" className="aspect-auto w-full" />
-                        {/* </div> */}
-
                         <figcaption className="p-5">
                             <h4 className="text-xl font-bold">{blog.title}</h4>
                             <p className="text-[#FCA311]">

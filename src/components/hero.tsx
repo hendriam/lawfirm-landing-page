@@ -16,7 +16,7 @@ export default function Hero() {
                         />
                     </span>
                 </h1>
-                <p className="text-white  font-thin md:text-lg text-base md:leading-8 leading-6 transition-all duration-200">
+                <p className="text-white font-thin md:text-lg text-base md:leading-8 leading-6 transition-all duration-200">
                     We stand by your side, providing expert legal guidance{" "}
                     <br className="hidden lg:flex transition-all delay-75 duration-300 ease-in-out" />{" "}
                     and unwavering support to protect your rights and{" "}

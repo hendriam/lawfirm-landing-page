@@ -1,5 +1,6 @@
 import Blogs from "./components/blogs";
 import Faqs from "./components/faqs";
+import Footer from "./components/footer";
 import Header from "./components/header";
 import Offer from "./components/offer";
 import OurLawyers from "./components/our-layers";
@@ -16,6 +17,7 @@ function App() {
                 <Blogs />
                 <Faqs />
             </main>
+            <Footer />
         </>
     );
 }
