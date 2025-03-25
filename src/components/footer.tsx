@@ -12,7 +12,7 @@ import {
 export default function Footer() {
     return (
         <footer className="bg-[url(./assets/bg-header.svg)] bg-center bg-cover text-white">
-            <div className="container mx-0 lg:mx-auto py-5 px-5 xl:px-0 lg:w-full max-w-6xl flex flex-col md:flex-row justify-between md:space-y-0 space-y-10">
+            <div className="container mx-0 lg:mx-auto py-10 px-5 xl:px-0 lg:w-full max-w-6xl flex flex-col md:flex-row justify-between md:space-y-0 space-y-10">
                 <div className="">
                     <a href="/">
                         <img src={logo} width={150} />

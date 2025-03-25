@@ -11,6 +11,10 @@ import blog3 from "./assets/blog3.jpg";
 import blog4 from "./assets/blog4.jpg";
 import blog5 from "./assets/blog5.jpg";
 import blog6 from "./assets/blog6.jpg";
+import lawyer1 from "./assets/lawyer-1.jpg";
+import lawyer2 from "./assets/lawyer-2.jpg";
+import lawyer3 from "./assets/lawyer-3.jpg";
+import lawyer4 from "./assets/lawyer-4.jpg";
 
 export type MenuTyps = {
     id: number;
@@ -213,24 +217,24 @@ export const offers: OfferType = [
 ];
 
 export const lawyers: LawyerType = [
-    { id: 1, name: "Austin Distel", title: "Family Lawyer", image: "./assets/lawyer-1.jpg" },
+    { id: 1, name: "Austin Distel", title: "Family Lawyer", image: lawyer1 },
     {
         id: 2,
         name: "Christina Wocin",
         title: "Intellectual Property Law",
-        image: "./assets/lawyer-2.jpg",
+        image: lawyer2,
     },
     {
         id: 3,
         name: "Joachim Thiele",
         title: "Human Rights and Advocacy",
-        image: "./assets/lawyer-3.jpg",
+        image: lawyer3,
     },
     {
         id: 4,
         name: "Victor Quiroga",
         title: "Real Estate and Property Law",
-        image: "./assets/lawyer-4.jpg",
+        image: lawyer4,
     },
 ];
 

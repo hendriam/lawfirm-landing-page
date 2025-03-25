@@ -21,8 +21,15 @@ export default function OurLawyers() {
                 {lawyers.map((lawyer) => (
                     <figure
                         key={lawyer.id}
-                        className={`bg-[url(${lawyer.image})] bg-cover relative bg-center bg-no-repeat w-auto lg:h-96 md:h-72 h-96 flex items-end justify-center shadow-[inset_0px_-40px_60px_0px_#1a202c] hover:shadow-[inset_0px_-60px_90px_0px_#1a202c] transition-all delay-100 duration-300 ease-in-out group`}
+                        className={`
+                             w-auto lg:h-96 md:h-72 h-96 flex items-end justify-center group relative overflow-hidden`}
                     >
+                        <img
+                            src={lawyer.image}
+                            alt={lawyer.name}
+                            className="w-full h-full object-cover brightness-100 hover:brightness-50 transition-all delay-0 duration-300 ease-in-out"
+                        />
+
                         <figcaption className="mb-4 absolute">
                             <h5 className="text-center text-xl text-white">{lawyer.name}</h5>
                             <p className="text-center text-sm text-[#FCA311]">{lawyer.title}</p>
