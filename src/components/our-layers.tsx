@@ -27,14 +27,14 @@ export default function OurLawyers() {
                         <img
                             src={lawyer.image}
                             alt={lawyer.name}
-                            className="w-full h-full object-cover brightness-100 hover:brightness-50 transition-all delay-0 duration-300 ease-in-out"
+                            className="w-full h-full object-cover brightness-100 group-hover:brightness-50 transition-all delay-0 duration-300 ease-in-out"
                         />
 
                         <figcaption className="mb-4 absolute">
                             <h5 className="text-center text-xl text-white">{lawyer.name}</h5>
                             <p className="text-center text-sm text-[#FCA311]">{lawyer.title}</p>
 
-                            <div className="bg-[#FCA311] px-5 group-hover:flex delay-100 duration-300 ease-in-out mt-2 hidden justify-center space-x-2 py-2">
+                            <div className="bg-[#FCA311] px-5 group-hover:flex transitiondelay-0 duration-300 ease-in-out mt-2 hidden justify-center space-x-2 py-2">
                                 <InstagramIcon />
                                 <LinkedInIcon />
                                 <TwitterIcon />
@@ -46,11 +46,11 @@ export default function OurLawyers() {
             </div>
 
             <div className="mt-5 w-fit flex space-x-2 mx-auto">
-                <button className="bg-[#FCA311] rounded-full p-2 hover:cursor-pointer hover:opacity-80">
+                <button className="bg-[#FCA311] rounded-full p-2 hover:cursor-pointer hover:opacity-80 transition-opacity duration-300 ease-in-out">
                     <ArrowLeft />
                 </button>
 
-                <button className="bg-[#FCA311] rounded-full p-2 hover:cursor-pointer hover:opacity-80">
+                <button className="bg-[#FCA311] rounded-full p-2 hover:cursor-pointer hover:opacity-80 transition-opacity duration-300 ease-in-out">
                     <ArrowRight />
                 </button>
             </div>

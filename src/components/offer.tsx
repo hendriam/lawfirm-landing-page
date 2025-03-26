@@ -16,7 +16,7 @@ export default function Offer() {
                         We provide tailored legal solutions to meet your unique needs, ensuring your
                         rights are protected and justice is served.
                     </p>
-                    <button className="bg-[#FCA311] md:mt-8 mt-5 hover:opacity-80 hover:cursor-pointer py-2 px-3.5 text-center font-bold">
+                    <button className="bg-[#FCA311] md:mt-8 mt-5 hover:opacity-80 hover:cursor-pointer py-2 px-3.5 text-center font-bold transition-opacity delay-100 duration-300 ease-in-out">
                         See more
                     </button>
                 </div>

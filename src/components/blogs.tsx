@@ -28,7 +28,7 @@ export default function Blogs() {
             </div>
 
             <div className="w-fit mx-auto mt-5">
-                <button className="bg-[#FCA311] hover:opacity-80 hover:cursor-pointer py-2 px-3.5 font-bold transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-3d">
+                <button className="bg-[#FCA311] hover:opacity-80 hover:cursor-pointer py-2 px-3.5 font-bold transition-opacity delay-100 duration-300 ease-in-out">
                     See more
                 </button>
             </div>

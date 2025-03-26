@@ -29,11 +29,11 @@ export default function Testimonials() {
                         <span className="text-sm font-light">Manager Director</span>
 
                         <div className="mt-5 w-fit flex space-x-2 items-center">
-                            <button className="bg-[#FCA311] text- rounded-full p-1 hover:cursor-pointer hover:opacity-80">
+                            <button className="bg-[#FCA311] text- rounded-full p-1 hover:cursor-pointer hover:opacity-80 transition-opacity duration-300 ease-in-out">
                                 <ArrowLeft />
                             </button>
 
-                            <button className="bg-[#FCA311] rounded-full p-1 hover:cursor-pointer hover:opacity-80">
+                            <button className="bg-[#FCA311] rounded-full p-1 hover:cursor-pointer hover:opacity-80 transition-opacity duration-300 ease-in-out">
                                 <ArrowRight />
                             </button>
                         </div>

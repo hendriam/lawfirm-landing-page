@@ -23,7 +23,7 @@ export default function Hero() {
                     <br className="hidden lg:flex transition-all delay-75 duration-300 ease-in-out" />
                     ensure justice is served
                 </p>
-                <button className="bg-[#FCA311] hover:opacity-80 hover:cursor-pointer md:py-3 py-2 md:px-5 px-3.5 xl:text-2xl md:text-xl text-lg text-center font-bold">
+                <button className="bg-[#FCA311] hover:opacity-80 hover:cursor-pointer md:py-3 py-2 md:px-5 px-3.5 xl:text-2xl md:text-xl text-lg text-center font-bold transition-opacity delay-100 duration-300 ease-in-out">
                     Schedule a Consultation
                 </button>
             </div>

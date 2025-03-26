@@ -19,11 +19,11 @@ export default function Navbar(props: Props) {
                     </li>
                 ))}
             </ul>
-            <button className="hidden md:flex bg-[#FCA311] hover:opacity-80 py-1.5 px-3 text-center font-bold text-[17px] hover:cursor-pointer ">
+            <button className="hidden md:flex bg-[#FCA311] hover:opacity-80 py-1.5 px-3 text-center font-bold text-[17px] hover:cursor-pointer transition-opacity delay-100 duration-300 ease-in-out">
                 Contact
             </button>
             <button
-                className="block md:hidden hover:cursor-pointer hover:opacity-85"
+                className="block md:hidden hover:cursor-pointer hover:opacity-85 "
                 onClick={props.onClick}
             >
                 <SquareMenu />

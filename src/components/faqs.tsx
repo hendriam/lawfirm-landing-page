@@ -41,7 +41,7 @@ export default function Faqs() {
                                     )}
                                 </div>
                                 <button
-                                    className={`bg-[#FCA311] rounded-full p-2 hover:cursor-pointer hover:opacity-80 ${
+                                    className={`bg-[#FCA311] rounded-full p-2 hover:cursor-pointer hover:opacity-80 transition-opacity delay-100 duration-300 ease-in-out ${
                                         activeIndex === index ? "rotate-90" : "-rotate-90"
                                     } `}
                                 >
