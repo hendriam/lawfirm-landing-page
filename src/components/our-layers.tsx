@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { lawyers } from "../data.ts";
 import {
     ArrowLeft,
@@ -7,10 +8,22 @@ import {
     LinkedInIcon,
     TwitterIcon,
 } from "./icons-social.tsx";
+import { motion } from "motion/react";
+
+const fadeInUpVariants = {
+    initial: { opacity: 0, y: 50 },
+    animate: {
+        y: 0,
+        opacity: 1,
+        transition: { duration: 1 },
+    },
+};
 
 export default function OurLawyers() {
+    const scrollRef = useRef(null);
+
     return (
-        <section className="w-full my-20">
+        <section ref={scrollRef} className="w-full my-20">
             <h3 className="text-[40px] text-center text-[#FCA311]">Our Lawyers</h3>
             <p className="mt-3 text-center">
                 Meet our team of dedicated legal professionals, committed to{" "}
@@ -19,10 +32,16 @@ export default function OurLawyers() {
             </p>
             <div className="mt-10 grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5">
                 {lawyers.map((lawyer) => (
-                    <figure
+                    <motion.figure
                         key={lawyer.id}
                         className={`
                              w-auto lg:h-96 md:h-72 h-96 flex items-end justify-center group relative overflow-hidden`}
+                        variants={fadeInUpVariants}
+                        initial="initial"
+                        whileInView="animate"
+                        viewport={{
+                            once: true,
+                        }}
                     >
                         <img
                             src={lawyer.image}
@@ -41,7 +60,7 @@ export default function OurLawyers() {
                                 <FacebookIcon />
                             </div>
                         </figcaption>
-                    </figure>
+                    </motion.figure>
                 ))}
             </div>
 

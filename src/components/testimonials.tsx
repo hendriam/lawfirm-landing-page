@@ -1,18 +1,52 @@
 import client1 from "../assets/client-1.jpg";
 import doubleQuote from "../assets/double-quote.svg";
 import { ArrowLeft, ArrowRight } from "./icons-social.tsx";
+import { motion } from "motion/react";
+
+const fadeInLeftVariants = {
+    initial: { x: -100 },
+    animate: {
+        x: 0,
+        transition: { duration: 1.5, ease: "easeInOut" },
+    },
+};
+
+const fadeInRightVariants = {
+    initial: { x: 100 },
+    animate: {
+        x: 0,
+        transition: { duration: 1.5, ease: "easeInOut" },
+    },
+};
+
 export default function Testimonials() {
     return (
         <section className="my-22 ">
             <div className="grid grid-rows-1 lg:grid-cols-3 gap-5 lg:gap-18 transition-all duration-200 ">
-                <div className="text-center lg:text-start ">
+                <motion.div
+                    className="text-center lg:text-start"
+                    variants={fadeInLeftVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{
+                        once: true,
+                    }}
+                >
                     <h3 className="text-2xl text-[#FCA311]">Client Testimonials</h3>
                     <p className="md:text-xl lg:text-[40px] text-[20px] lg:leading-12 leading-normal mt-3 lg:text-start text-center">
                         Hear from our clients about their <br className="block lg:hidden" />{" "}
                         experiences.
                     </p>
-                </div>
-                <figure className="flex  flex-col md:flex-row col-span-1 lg:col-span-2 md:space-x-6 space-x-0 space-y-6 md:space-y-0 ">
+                </motion.div>
+                <motion.figure
+                    className="flex  flex-col md:flex-row col-span-1 lg:col-span-2 md:space-x-6 space-x-0 space-y-6 md:space-y-0"
+                    variants={fadeInRightVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{
+                        once: true,
+                    }}
+                >
                     <img
                         src={client1}
                         className="lg:w-[400px] md:w-[300px] w-[250px] transition-all duration-200 self-center"
@@ -38,7 +72,7 @@ export default function Testimonials() {
                             </button>
                         </div>
                     </figcaption>
-                </figure>
+                </motion.figure>
             </div>
         </section>
     );
