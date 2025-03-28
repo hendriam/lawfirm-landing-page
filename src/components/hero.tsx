@@ -3,7 +3,7 @@ import vector1 from "../assets/vector-1.svg";
 import { motion } from "motion/react";
 
 const fadeInLeftVariants = {
-    initial: { x: -200 },
+    initial: { x: -100 },
     animate: {
         x: 0,
         transition: { duration: 1.5, ease: "easeInOut" },
@@ -11,7 +11,7 @@ const fadeInLeftVariants = {
 };
 
 const fadeInRightVariants = {
-    initial: { x: 200 },
+    initial: { x: 100 },
     animate: {
         x: 0,
         transition: { duration: 1.5, ease: "easeInOut" },
